@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="de">
+<head>
+</head>
+	<meta charset="utf-8">
+	<title> CSSGrid-Layout </title>
+	<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Playfair+Display">
+	<style>
+		.parent {
+			display: grid;
+			grid-template: auto 1fr auto / 200px auto 200px;
+			text-align: center;
+			height: 100vh;
+
+			font-family: 'Playfair Display', serif;
+		}
+
+		header {
+			grid-column: 1 / 4;
+			background-color: coral;
+		}
+
+		.left-side {
+			grid-column: 1 / 2;
+			background-color: blue;
+		}
+
+		main {
+			grid-column: 2 / 3;
+			background-color: green;
+		}
+
+		.right-side {
+			grid-column: 3 / 4;
+			background-color: yellow;
+		}
+
+		footer {
+			grid-column: 1 / 4;
+			background-color: coral;
+		}
+
+		.parent * {
+			padding: 2rem;
+		}
+
+	</style>
+<body>
+	<div class="parent">
+		<header>Header</header>
+		<aside class="left-side">Left Sidebar</aside>
+		<main> Main Content</main>
+		<aside class="right-side">Right Sidebar</aside>
+		<footer>Footer</footer>
+	  </div>
+</body>
+</html>
