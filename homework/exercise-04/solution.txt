@@ -1,0 +1,5 @@
+# 1)
+ - Amount of requests: 61 
+ - Loaded data: 6.5MB
+ - Took time: 487ms    (depends on internet speed)
+ - Other responses than 200? no
